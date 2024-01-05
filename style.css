@@ -1,0 +1,401 @@
+/* CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  /*border-bottom: 1px solid #e2e8f0;*/
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /*margin-right: 0.5rem;*/
+  border: white 16x;
+  margin: 5px auto;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  /*font-weight: 500;*/
+  color: #FFFFFF;
+  background-color: black;
+  padding: 2%;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+  border: solid black 5px;
+}
+
+/* CSS */
+.fas.fa-times {
+  font-size: 32px;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.sidenav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  z-index: 10;;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: 0.3s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.sidenav.active {
+  right: 0;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.sidenav-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.sidenav-item {
+  margin: 1.5rem 0;
+}
+
+.sidenav-link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+  padding: 0.5rem 1rem;
+}
+
+.sidenav-link:hover {
+  color: #482ff7;
+  background-color: #f0f2f7;
+}
+
+/* CSS */
+.hero {
+  width: 100%;
+  height: 100%;
+  /*background-image: url(hero-image.jpg);*/
+  background-color: black;
+  position: fixed;
+  border: 2px solid black;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+/* CSS */
+.form-source {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+button,
+input {
+  vertical-align: middle;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: #475569;
+}
+
+button {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 2px;
+  font-size: 1.4rem;
+}
+
+/* CSS */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box i {
+  font-size: 20px;
+  color: black;
+}
+
+.box span {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.horizon {
+  background-color: #FFFFFF6B;
+  border-radius: 50px;
+  position: absolute;
+  left: 35%;
+  top: 10px;
+  padding: 3px;
+  width: 30%;
+}
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Membuat button cricle dengan logo whatsapp */
+.button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Membuat logo whatsapp */
+.logo {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f232";
+}
+
+.cynix {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.danz {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.music-player {
+  width: 0 auto;
+  height: 0 auto;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Membuat elemen untuk menampilkan tombol */
+.music-button {
+  width: 30px;
+  height: 30px;
+  border: solid;
+  border-radius: 50%;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Membuat posisi tombol kiri dan kanan */
+.music-button.left {
+  left: 10px;
+  margin-left: 15px;
+}
+
+.music-button.right {
+  right: 10px;
+  margin-right: 15px;
+}
+
+/* Membuat posisi tombol tengah */
+.music-button.center {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jam {
+  padding: 6%;
+}
+
+.card {
+  /* Tambahkan bayangan untuk efek card */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* Atur lebar dan tinggi card */
+  width: 250px;
+  height: auto;
+  /* Atur sudut bulat card */
+  border-radius: 10px;
+  /* Atur warna latar belakang card */
+  background-color: white;
+  margin: 5px;
+}
+
+.card__img {
+  /* Atur lebar dan tinggi gambar */
+  width: 100%;
+  height: auto;
+  /* Sesuaikan gambar dengan ukuran card */
+  object-fit: cover;
+  /* Atur sudut bulat gambar sesuai dengan card */
+  border-radius: 10px 10px 0 0;
+}
+
+.card__info {
+  /* Atur padding untuk elemen di dalam card */
+  padding: 20px;
+}
+
+.card__price {
+  /* Atur ukuran dan warna font harga */
+  font-size: 24px;
+  color: black;
+}
+
+.card__discount {
+  top: 300px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;
+  /* Atur warna latar belakang dan sudut bulat label diskon */
+  background-color: red;
+  border-radius: 5px;
+  /* Atur padding untuk label diskon */
+  padding: 5px 10px;
+}
+
+.card__desc {
+  /* Atur ukuran dan warna font deskripsi */
+  font-size: 16px;
+  color: gray;
+  /* Atur margin untuk deskripsi */
+  margin: 10px 0;
+}
+
+.card__btn {
+  /* Atur lebar, tinggi, dan warna font button buy */
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  /* Atur warna latar belakang dan sudut bulat button buy */
+  background-color: black;
+  border-radius: 10px;
+  /* Hapus border button buy */
+  border: none;
+  /* Atur efek hover untuk button buy */
+  transition: 0.3s;
+}
+
+.card__btn:hover {
+  /* Ubah warna latar belakang button buy saat di-hover */
+  background-color: darkblue;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  align-items: center;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid #FF3D00;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
